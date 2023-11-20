@@ -1,0 +1,10 @@
+.title{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: #169c02;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 4px 10px 21px black;
+}

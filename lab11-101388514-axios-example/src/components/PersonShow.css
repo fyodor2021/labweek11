@@ -1,0 +1,44 @@
+.flex-top-container{
+    margin:20px;
+    box-shadow: 4px 10px 21px black;
+}
+.flex-med-container{
+    display: flex;
+    flex-direction: row;
+    background-color: #3ca5b5;
+    margin-bottom: 20px ;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    padding:30px
+}
+.flex-item{
+    display: flex;
+    flex-direction: row;
+}
+img{
+    width: 250px;
+    border-radius:200px;
+    margin-bottom:10px;
+    box-shadow: 3px 4px 10px black
+}
+button{
+    width: 100px;
+    height: 38px;
+    background-color: #0283bf;
+    border: none;
+    border-radius: 6px;
+    color:white;
+    box-shadow: 3px 4px 2px black;
+}
+.button-container{
+    display: flex;
+    justify-content: space-around;
+}
+.person-header{
+    background-color: #02879c;
+    border:1px solid rgba(95, 95, 95, 0.445);
+    height: 20px;
+    padding: 10px
+}
