@@ -23,49 +23,53 @@ function PersonShow({ person }) {
                 </div>
                 <div className="flex-container">
                     <div className="flex-item">
-                        <p>User Name: </p>
+                        <p className="label">User Name: </p>
                         <p>{person.login.username}</p>
                     </div>
                     <div className="flex-item">
-                        <p>Gender: </p>
+                        <p className="label">Gender: </p>
                         <p>{person.gender}</p>
                     </div>
                     <div className="flex-item">
-                        <p>Time Zone Desciption: </p>
+                        <p className="label">Time Zone Desciption: </p>
                         <p>{person.location.timezone.description}</p>
                     </div>
-                    <div className="flex-item">
-                        <p>User Name: </p>
-                        <p>
-                            <span>{person.location.street.number} </span>
-                            <span>{person.location.street.name}, </span>
-                            <span>{person.location.city}, </span>
-                            <span>{person.location.state}, </span>
-                            <span>{person.location.country}, </span>
-                            <span>{person.location.postcode}</span>
-                        </p>
+                    <div className="flex-item ">
+                        <div className="address-label">
+                            <p>Address: </p>
+                        </div>
+
+                        <div className="address-container">
+                            <span className="address">{person.location.street.number} </span>
+                            <span className="address">{person.location.street.name}, </span>
+                            <span className="address">{person.location.city}, </span>
+                            <span className="address">{person.location.state}, </span>
+                            <span className="address">{person.location.country}, </span>
+                            <span className="address">{person.location.postcode}</span>
+
+                        </div>
                     </div>
                     <div className="flex-item">
-                        <p>Email: </p>
+                        <p className="label">Email: </p>
                         <p>{person.email}</p>
                     </div>
                     <div className="flex-item">
-                        <p>Birth Date and Age: </p>
+                        <p className="label">Birth Date and Age: </p>
                         <p>
                             <span>{person.dob.date} </span>
                             <span>({person.dob.age})</span>
                         </p>
                     </div>
                     <div className="flex-item">
-                        <p>Register Date: </p>
+                        <p className="label">Register Date: </p>
                         <p>{person.registered.date}</p>
                     </div>
                     <div className="flex-item">
-                        <p>Phone#: </p>
+                        <p className="label">Phone#: </p>
                         <p>{person.phone}</p>
                     </div>
                     <div className="flex-item">
-                        <p>Cell#: </p>
+                        <p className="label">Cell#: </p>
                         <p>{person.cell}</p>
                     </div>
                 </div>
